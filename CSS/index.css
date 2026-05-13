@@ -1,0 +1,98 @@
+body {
+  background-color: #dcdad7;
+  /* color: #061702; */
+  font-family: "Google Sans", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  /* border: solid black 5px; */
+}
+header {
+  /* background: rgb(193, 83, 4); */
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
+a {
+  color: rgb(193, 83, 4);
+}
+
+h1 {
+  color: rgb(20, 82, 1);
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #6e9131;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: solid black 2px;
+}
+
+section {
+  border: 2px solid rgb(255, 0, 0);
+  margin: 20px;
+}
+
+#connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#connect li a:hover {
+  background-color: #111;
+}
+
+.card {
+  padding: 0 20px 20px 20px;
+  /* border: 20px solid rgb(218, 95, 23); */
+  /* margin: 20px; */
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.columns {
+  border: solid blue 5px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid red;
+  margin: 5px;
+}
+
+.item {
+  border: solid yellow 2px;
+}
+
+.full {
+  flex: 1 1 100%;
+}

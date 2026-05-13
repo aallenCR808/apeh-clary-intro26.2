@@ -1,76 +1,144 @@
+<!-- make responsive, image/resize, return to top of page, sticky header, hamburger, mobile, search bar, a call to action -->
+
 <!doctype html>
 <html lang="en">
   <head>
+    <link href="css/index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="Apeh Clary Profile. Code the Dream Project HTML Website."
-    />
-    <title>Apeh's Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apeh Clary Profile. Code the Dream Project." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet" />
+
+    <title>August Profile</title>
   </head>
 
   <body>
-    <h1>Apeh Clary</h1>
+    <header>Header: logo/branding, contact info, legal links, site navigation, email, SM links
+    </header>
 
-    <body>
-      <section id="about">
-        <h2>About Me</h2>
-        <h4>
-          <p>
-            I'm learning to code with Code the Dream! I am doing a career change
-            and excited about this new venture.
-          </p>
-          <p>
-            <q>Success is a journey, not a destination.</q>
-          </p>
-        </h4>
-      </section>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
 
-      <section id="experience">
-        <h2>Experience</h2>
-        <h4>I am brand new to coding!</h4>
-        <ul>
-          <li>Intro to Programming - Code the Dream 2026</li>
-          <li>Self-taught HTML and CSS</li>
-        </ul>
-      </section>
+      <h1>Create with Apeh</h1>
+    <!-- <img src="purple.jpg" width="100" height="100" alt="resized image" /> -->
+       <p>Add a quick about me here. Smaller under the h1.</p>
+      
+  </body>
 
-      <section id="Hobbies & Interests">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-          <li>Being Outdoors</li>
-          <li>Hikes</li>
-          <li>Veganism</li>
-          <li>Legos</li>
-          <li>Pokemon</li>
-          <li>The Mandalorian and Grogu</li>
-        </ul>
-      </section>
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I'm learning to code with Code the Dream! I am doing a career change and excited about this
+        new venture.
+      </p>
+      <q class="center">Success is a journey, not a destination.</q>
+    </section>
 
-      <section id="Connect">
-        <h2>Connect With Me</h2>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/aallenCR808"
-              >Github</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/apehclary"
-            >
-              LinkedIn</a
-            >
-          </li>
-        </ul>
-      </section>
-    </body>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        Add Github Projects via API call using Javascript.
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Add skills with Javascript</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+
+      <div class="columns">
+
+      <div class="column">
+        <!-- column 1 -->
+        <p class="item">Student at Code the Dream</p>
+        <p class="item">March 2026</p>
+        <p class="item full">Intro to Programming: HTML, JavaScript, CSS</p>
+      </div>
+
+      <div class="column">
+        <!-- column 2 -->
+        <p class="item">Job Title</p>
+        <p class="item">Date</p>
+        <p class="item full">Description</p>
+      </div>
+
+      <div class="column">
+        <!-- column 3 -->
+        <p class="item">Job Title</p>
+        <p class="item">Date</p>
+        <p class="item full">Description</p>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="interests" class="card">
+      <h2>Interests</h2>
+      <ul>
+        <li>Being Outdoors</li>
+        <li>Hikes</li>
+        <li>Veganism</li>
+        <li>Legos</li>
+        <li>Pokemon</li>
+        <li>The Mandalorian and Grogu</li>
+      </ul>
+    </section>
+
+    <section id="connect" class="card">
+      <h2>Connect</h2>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/aallenCR808">Github</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://linkedin.com/in/apehclary">LinkedIn</a>
+        </li>
+      </ul>
+      <p>email form</p>
+    </section>
+
+    <section id="links" class="card">
+      <h2>More</h2>
+      <h3>
+        Links to other pages within my site. Visit our
+        <a href="attributes.html">Attributes</a>
+        page. Visit our
+        <a href="anchors.html">Anchors</a>
+        page.
+      </h3>
+
+    </section>
+    <footer>
+      <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+      <p> August "Apeh" Allen </p>
+       <p>Footer: logo/branding, contact info, email, SM links. Crucial supporting info, UX, SEO, email, SM links.</p>
+      <p>&copy; 2026 Company Name (TM). All rights reserved. Terms of Service. Privacy Policy</p>
+    </footer>
   </body>
 </html>
