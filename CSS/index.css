@@ -1,13 +1,13 @@
 body {
   background-color: #dcdad7;
-  /* color: #061702; */
+  color: #061702;
   font-family: "Google Sans", sans-serif;
   margin: 20px;
   padding: 20px;
   /* border: solid black 5px; */
 }
 header {
-  /* background: rgb(193, 83, 4); */
+  background: rgb(193, 83, 4);
   color: #000000;
   margin: 0 0 5px 0;
 }
@@ -37,6 +37,7 @@ h1 {
   color: rgb(20, 82, 1);
   font-size: 60px;
   text-align: center;
+  font-weight: 700;
 }
 
 h2 {
@@ -44,6 +45,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   border-bottom: solid black 2px;
+  font-weight: 600;
 }
 
 section {
