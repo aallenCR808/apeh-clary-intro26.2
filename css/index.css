@@ -53,7 +53,7 @@ section {
   margin: 20px;
 }
 
-#connect ul {
+#Connect ul {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -61,7 +61,7 @@ section {
   list-style: none;
 }
 
-#connect li a:hover {
+#Connect li a:hover {
   background-color: #111;
 }
 
@@ -97,4 +97,15 @@ section {
 
 .full {
   flex: 1 1 100%;
+}
+
+#Skills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+footer {
+  text-align: right;
 }
