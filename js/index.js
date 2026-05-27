@@ -2,10 +2,10 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector("footer");
 let copyright = document.createElement("p");
-copyright.innerHTML = `&copy; ${thisYear} Apeh Clary`;
+copyright.innerHTML = `\u00A9 ${thisYear} August Apeh Clary`;
 footer.appendChild(copyright);
 
-let skills = ["Javascript", "HTML", "CSS", "Github"];
+let skills = ["JavaScript", "HTML", "CSS", "GitHub"];
 let skillsSection = document.querySelector("#Skills");
 let skillsList = skillsSection.querySelector("ul");
 
