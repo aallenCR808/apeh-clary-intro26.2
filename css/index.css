@@ -53,18 +53,7 @@ section {
   margin: 20px;
 }
 
-#Connect ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  list-style: none;
-}
-
-#Connect li a:hover {
-  background-color: #111;
-}
-
+/* Experience Style */
 .card {
   padding: 0 20px 20px 20px;
   /* border: 20px solid rgb(218, 95, 23); */
@@ -104,6 +93,64 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
+}
+
+#Connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#Connect li a:hover {
+  background-color: #111;
+}
+
+#messages {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+#messages ul li {
+  list-style: none;
+
+  background: var(--cream);
+  margin: 20px 0px;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px var(--shadow);
+  border-left: 5px solid var(--earth);
+}
+
+#sendMessage form input {
+  padding: 10px 10px;
+  border: 1px solid var(--earth);
+  margin: 10px 0px;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+#sendMessage form textarea {
+  margin-top: 10px;
+  border: 1px solid var(--earth);
+  padding: 0px 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#sendMessage button {
+  padding: 12px 30px;
+  border:#6e9131
+  border-radius: 55px;
+  background: var(--earth);
+  color: var(--cream);
+  font-size: 16px;
+  cursor: pointer;
+  /* justify-content: */
 }
 
 footer {
