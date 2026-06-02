@@ -11,26 +11,26 @@
 
 // Christian Chourio
 
-let form = document.querySelector("form");
+// let form = document.querySelector("form");
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let name = event.target.userName.value;
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   let name = event.target.userName.value;
 
-  console.log(name);
-});
+//   console.log(name);
+// });
 
-let name = event.target.usersName.value;
-let email = event.target.usersEmail.value;
-let message = event.target.usersMessage.value;
-let messageList = document.querySelector("#messages ul");
-newMessage.innerHTML = `<a href=mailto:${email}'>${email}></a> <span>${message}</span>`;
+// let name = event.target.usersName.value;
+// let email = event.target.usersEmail.value;
+// let message = event.target.usersMessage.value;
+// let messageList = document.querySelector("#messages ul");
+// newMessage.innerHTML = `<a href=mailto:${email}'>${email}></a> <span>${message}</span>`;
 
-messageList.appendChild(newMessage);
+// messageList.appendChild(newMessage);
 
-form.rest();
+// form.rest();
 
-let remove;
+// let remove;
 
 // in HTML
 //     <!-- two types that work 1 name message

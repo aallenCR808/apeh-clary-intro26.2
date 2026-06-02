@@ -4,7 +4,8 @@ body {
   font-family: "Google Sans", sans-serif;
   margin: 20px;
   padding: 20px;
-  /* border: solid black 5px; */
+  font-size: 20px;
+  border: solid black 5px;
 }
 header {
   background: rgb(193, 83, 4);
@@ -18,21 +19,25 @@ header {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background-color: #333;
+
 }
+
 .navbar li a {
   display: block;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-}
-.navbar li a:hover {
-  background-color: #111;
-}
-a {
-  color: rgb(193, 83, 4);
+  
 }
 
+.navbar li a:hover {
+  background-color: #111;
+  
+}
+
+/* title name "Create with Apeh" */
 h1 {
   color: rgb(20, 82, 1);
   font-size: 60px;
@@ -40,6 +45,7 @@ h1 {
   font-weight: 700;
 }
 
+/* section titles */
 h2 {
   color: #6e9131;
   font-size: 30px;
@@ -48,12 +54,13 @@ h2 {
   font-weight: 600;
 }
 
+/* styling outline */
 section {
   border: 2px solid rgb(255, 0, 0);
   margin: 20px;
 }
 
-/* Experience Style */
+/* Experience Styling with reference colors for design */
 .card {
   padding: 0 20px 20px 20px;
   /* border: 20px solid rgb(218, 95, 23); */
@@ -88,11 +95,17 @@ section {
   flex: 1 1 100%;
 }
 
+/* skills styling */
 #Skills ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
+}
+
+/* connect styling */
+a {
+  color: rgb(193, 83, 4);
 }
 
 #Connect ul {
@@ -107,21 +120,7 @@ section {
   background-color: #111;
 }
 
-#messages {
-  padding-top: 0px;
-  padding-bottom: 20px;
-}
-
-#messages ul li {
-  list-style: none;
-
-  background: var(--cream);
-  margin: 20px 0px;
-  padding: 40px 20px;
-  border-radius: 15px;
-  box-shadow: 0px 2px 8px var(--shadow);
-  border-left: 5px solid var(--earth);
-}
+/* leava a message form  */
 
 #sendMessage form input {
   padding: 10px 10px;
@@ -129,28 +128,48 @@ section {
   margin: 10px 0px;
   transition: all 0.2s;
   border-radius: 5px;
+  width: 99%;
+  height: 100%;
 }
 
 #sendMessage form textarea {
   margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid var(--earth);
   padding: 0px 10px;
   padding-top: 10px;
   padding-bottom: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: "Google Sans", sans-serif;
   font-size: 16px;
   border-radius: 5px;
+  width: 99%;
+  height: 100%;
 }
 
 #sendMessage button {
   padding: 12px 30px;
-  border:#6e9131
+  border:#000000
   border-radius: 55px;
   background: var(--earth);
   color: var(--cream);
   font-size: 16px;
   cursor: pointer;
-  /* justify-content: */
+}
+
+/* messages styling  */
+#messages {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#messages ul li {
+  list-style: none;
+  /* background: var(--cream); */
+  margin: 20px 0px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  /* box-shadow: 0px 2px 8px var(--shadow); */
+  border-left: 5px solid var(--earth);
 }
 
 footer {
