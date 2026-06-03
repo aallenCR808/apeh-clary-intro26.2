@@ -1,21 +1,3 @@
-// copyright tag
-let today = new Date();
-let thisYear = today.getFullYear();
-let footer = document.querySelector("footer");
-let copyright = document.createElement("p");
-copyright.innerHTML = `\u00A9 ${thisYear} August Apeh Clary`;
-footer.appendChild(copyright);
-
-// skills
-let skills = ["JavaScript", "HTML", "CSS", "GitHub"];
-let skillsSection = document.querySelector("#Skills");
-let skillsList = skillsSection.querySelector("ul");
-
-for (let i = 0; i < skills.length; i++) {
-  let skill = document.createElement("li");
-  skill.textContent = skills[i];
-  skillsList.appendChild(skill);
-}
 // cursor change on h1
 let heading = document.querySelector("h1");
 heading.style.cursor = "pointer";
@@ -29,29 +11,34 @@ heading.addEventListener("click", function () {
   }
 });
 
+// skills section
+let skills = ["JavaScript", "HTML", "CSS", "GitHub"];
+let skillsSection = document.querySelector("#Skills");
+let skillsList = skillsSection.querySelector("ul");
+
+for (let i = 0; i < skills.length; i++) {
+  let skill = document.createElement("li");
+  skill.textContent = skills[i];
+  skillsList.appendChild(skill);
+}
+
 // contact message form
-let form = document.querySelector("form");
-form.addEventListener("submit", function (event) {
-  console.log(event);
+const messageForm = document.querySelector('[name="leave_message"]');
+messageForm.addEventListener("submit", function (event) {
   //prevent page from refreshing
   event.preventDefault();
 
   let name = event.target.usersName.value;
   let email = event.target.usersEmail.value;
   let message = event.target.usersMessage.value;
-  form.reset();
+  console.log(`${email} ${name} ${message}`);
+  console.log(event);
 
   //message list
-  messageSection = document.getElementById("messages");
+  messageSection = document.getElementById("messages"); //"messages"
   messageList = messageSection.querySelector("ul");
-
-  //Airhub rec removal to only query this section rather than entire document
-  //let messageList = document.querySelector("#messages ul");
-
   let newMessage = document.createElement("li");
-
-  newMessage.innerHTML = `<a href="mailto:${email}">${name}</a><span>${message}</span> `;
-
+  newMessage.innerHTML = `<a href="mailto:${email}">${name}</a><span>${message}</span>`;
   messageList.appendChild(newMessage);
 
   //remove button from message list
@@ -63,9 +50,14 @@ form.addEventListener("submit", function (event) {
     let entry = this.parentNode;
     entry.remove();
   });
-
   newMessage.appendChild(removeButton);
-
-  console.log(`${email} ${name} ${message}`);
-  console.log(event);
+  messageForm.reset();
 });
+
+// copyright tag
+let today = new Date();
+let thisYear = today.getFullYear();
+let footer = document.querySelector("footer");
+let copyright = document.createElement("p");
+copyright.innerHTML = `\u00A9 ${thisYear} August Apeh Clary`;
+footer.appendChild(copyright);
