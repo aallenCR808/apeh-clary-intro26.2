@@ -11,6 +11,41 @@ heading.addEventListener("click", function () {
   }
 });
 
+// projects section
+//fetch API my gitHub repos
+fetch("https://api.github.com/users/aallenCR808/repos")
+  .then((response) => {
+    if (!response.ok) {
+      //turn off internet to test this
+      throw new Error("Request failed", response.status);
+    }
+    return response.json(); //Parse the response as JSON
+  })
+  //Get the data and add it to the html - once you have to data, use DOM to show it
+  .then((data) => {
+    console.log("json data = ", data);
+    // Do something with the data. It's an array with objects
+    repositories = [...data];
+    console.log("repositories array =", repositories);
+    //add to HTML in Projects section under ul
+    let projectList = document.querySelector("#Projects ul");
+    // //for each: add each element to project list
+    // data.forEach((element) => {
+    //   let project = document.createElement("li");
+    //   project.innerHTML = element.name;
+    //   projectList.appendChild(project);
+    // });
+    for (let i = 0; i < data.length; i++) {
+      let project = document.createElement("li");
+      //can add anchor to click and open page
+      project.innerHTML = data[i].name;
+      //project.innerHTML = `<a target="_blank" href=`${data[i].html_url}`>${data[i].name}</a>` go to HTML and delete <a href
+      // later can add data[i].html_url => click to bring to github project link
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => console.error(error));
+
 // skills section
 let skills = ["JavaScript", "HTML", "CSS", "GitHub"];
 let skillsSection = document.querySelector("#Skills");
